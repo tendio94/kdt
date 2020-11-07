@@ -1,0 +1,23 @@
+apply plugin: 'application'
+
+mainClassName = "com.tendio.kdt"
+group = 'com.tendio.kdt'
+sourceCompatibility = '1.8'
+
+dependencies {
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.14.0'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.7'
+    compile group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.7'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
+    compile group: 'com.jcraft', name: 'jsch', version: '0.1.55'
+    compile 'org.apache.poi:poi:3.14'
+    compile 'commons-io:commons-io:2.6'
+    compile 'org.apache.poi:poi-ooxml:3.14'
+    compile 'org.apache.logging.log4j:log4j-core:2.11.1'
+    testCompile 'junit:junit:4.11'
+}
+
+repositories {
+    mavenCentral()
+}
